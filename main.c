@@ -175,8 +175,8 @@ static int parse_options( int argc, char *argv[] )
 
                 error=RETURN_INVALID_ARGUMENTS;
             }
-
-            hide_password();
+            else
+                hide_password();
             unsetenv(optarg);
             break;
         case '?':
